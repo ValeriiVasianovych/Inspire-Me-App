@@ -1,0 +1,214 @@
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+*,
+:after,
+:before {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+:active,
+:focus {
+   outline: 0;
+}
+a:active,
+a:focus {
+   outline: 0;
+}
+aside,
+footer,
+header,
+nav {
+   display: block;
+}
+body,
+html {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+button,
+input,
+textarea {
+   font-family: inherit;
+}
+input::-ms-clear {
+   display: none;
+}
+button {
+   cursor: pointer;
+}
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+a,
+a:visited {
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: none;
+}
+ul li {
+   list-style: none;
+}
+img {
+   vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: 400;
+}
+body {
+   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/*------------------------------------------------------------------*/
+
+body {
+   overflow: hidden;
+   font-family: 'Manrope';
+   background-color: #1f2632;
+   max-width: 1440px;
+   margin: 0 auto;
+   font-weight: 800px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   .container__box {
+      padding: 35px 50px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 550px;
+      min-height: 350px;
+      border-radius: 15px;
+      background-color: #323a49;
+      box-shadow: 1px 4px 10px #26282f;
+      .quote__number {
+         font-size: 14px;
+         letter-spacing: 5px;
+         color: #ff8738;
+         margin-bottom: 25px;
+      }
+      .quote__container {
+         flex: 1 auto;
+      }
+      .quote__text {
+         line-height: 40px;
+         max-width: 450px;
+         text-align: center;
+         font-size: 28px;
+         color: #cee3e9;
+      }
+      .pattern {
+         margin-bottom: 35px;
+      }
+      .dice__button {
+         z-index: 1;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 60px;
+         height: 60px;
+         border-radius: 50%;
+         background-color: #ff8738;
+         position: absolute;
+         cursor: pointer;
+         bottom: -30px;
+         transition: 0.3s;
+         &:hover,
+         &:active {
+            box-shadow: 0px 0px 20px #ff8738;
+            box-shadow: 0px 0px 20px #ff8738;
+         }
+      }
+   }
+}
+
+/*-------------575px-----------------------------------------------------*/
+
+@media (max-width: 575px) {
+   body {
+      .container__box {
+         padding: 30px 15px;
+         min-width: 340px;
+         min-height: 330px;
+         border-radius: 10px;
+         .quote__number {
+            font-size: 12px;
+            letter-spacing: 2px;
+            margin-bottom: 35px;
+         }
+         .quote__text {
+            line-height: 30px;
+            max-width: 300px;
+            font-size: 20px;
+         }
+         .pattern {
+            margin-bottom: 25px;
+            max-width: 250px;
+         }
+         .dice__button {
+            width: 48px;
+            height: 48px;
+            bottom: -24px;
+            .dice__icon {
+               width: 22px;
+               height: 22px;
+            }
+         }
+      }
+   }
+}
+
+/*-------------320px-----------------------------------------------------*/
+
+@media (max-width: 320px) {
+   body {
+      .container__box {
+         padding: 20px 20px;
+         min-width: 270px;
+         min-height: 270px;
+         border-radius: 10px;
+         .quote__number {
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            margin-bottom: 30px;
+         }
+         .quote__text {
+            line-height: 25px;
+            max-width: 230px;
+            font-size: 16px;
+         }
+         .pattern {
+            margin-bottom: 20px;
+            max-width: 180px;
+         }
+         .dice__button {
+            width: 46px;
+            height: 46px;
+            bottom: -23px;
+            .dice__icon {
+               width: 21px;
+               height: 21px;
+            }
+         }
+      }
+   }
+}

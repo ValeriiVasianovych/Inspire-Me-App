@@ -1,0 +1,5 @@
+# Ignore unneeded files and directories
+
+/.parcel-cache
+/dist
+/node_modules
