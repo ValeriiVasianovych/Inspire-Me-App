@@ -22,7 +22,7 @@ Welcome to InspireMe, where wisdom meets simplicity!
 ## Get Started
 1. Clone the repository.
 2. Navigate to the project directory.
-3. Run `npm i` or `npm i --force` to install dependencies.
+3. Run `npm i` to install dependencies.
 4. Execute `npm start` to launch the app.
 
 Let the journey begin! 🌟
